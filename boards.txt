@@ -66,6 +66,37 @@ Nucleo_8L152R8.menu.upload_method.MassStorage.upload.tool=massStorageCopy
 Nucleo_8L152R8.menu.upload_method.stm8Flasher=stm8Flasher
 Nucleo_8L152R8.menu.upload_method.stm8Flasher.upload.protocol=stm8Tools
 Nucleo_8L152R8.menu.upload_method.stm8Flasher.upload.tool=stm8Flasher
+################################################################################
+# SOT8 STM8L05J3
+
+SOT8_STM8L05J3.name=SOT8_STM8L05J3
+
+SOT8_STM8L05J3.build.core=arduino
+SOT8_STM8L05J3.build.board=SOT8_STM8L05J3
+SOT8_STM8L05J3.build.extra_flags=-d{build.product_line} {build.xSerial}
+
+# SOT8_STM8L05J3 board
+# Support: Serial1 (USART1 on PA2, PA3), Serial2 (USART2 on PE3, PE4) and Serial3 (USART2 on PG0, PG1)
+SOT8_STM8L05J3=Stand alone STM8L05J3
+SOT8_STM8L05J3.device=STM8L05J3
+SOT8_STM8L05J3.node=NODE_8L05J3
+SOT8_STM8L05J3.upload.maximum_size=8192
+SOT8_STM8L05J3.upload.maximum_data_size=4096
+SOT8_STM8L05J3.build.mcu=8-bit
+SOT8_STM8L05J3.build.board=SOT8_STM8L05J3
+SOT8_STM8L05J3.build.series=STM8Lxx
+SOT8_STM8L05J3.build.splibraryPrefix=_StdPeriph_Driver
+SOT8_STM8L05J3.build.product_line=STM8L05X_LD_VL
+SOT8_STM8L05J3.build.variant=SOT8_STM8L05J3
+SOT8_STM8L05J3.build.f_cpu=16000000
+
+SOT8_STM8L05J3.menu.upload_method.MassStorage=Mass Storage
+SOT8_STM8L05J3.menu.upload_method.MassStorage.upload.protocol=
+SOT8_STM8L05J3.menu.upload_method.MassStorage.upload.tool=massStorageCopy
+
+SOT8_STM8L05J3.menu.upload_method.stm8Flasher=stm8Flasher
+SOT8_STM8L05J3.menu.upload_method.stm8Flasher.upload.protocol=stm8Tools
+SOT8_STM8L05J3.menu.upload_method.stm8Flasher.upload.tool=stm8Flasher
 
 ################################################################################
 # Serialx activation
@@ -80,3 +111,9 @@ Nucleo_8L152R8.menu.xserial.none=Enabled without generic Serial
 Nucleo_8L152R8.menu.xserial.none.build.xSerial=-dHWSERIAL_NONE
 Nucleo_8L152R8.menu.xserial.disabled=Disabled (No Serial)
 Nucleo_8L152R8.menu.xserial.disabled.build.xSerial=-dNO_HWSERIAL
+
+SOT8_STM8L05J3.menu.xserial.generic=Enabled with generic Serial
+SOT8_STM8L05J3.menu.xserial.none=Enabled without generic Serial
+SOT8_STM8L05J3.menu.xserial.none.build.xSerial=-dHWSERIAL_NONE
+SOT8_STM8L05J3.menu.xserial.disabled=Disabled (No Serial)
+SOT8_STM8L05J3.menu.xserial.disabled.build.xSerial=-dNO_HWSERIAL
